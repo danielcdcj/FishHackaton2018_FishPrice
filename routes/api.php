@@ -27,5 +27,12 @@ Route::get('getPrice', 'FishPriceController@getPrice');
 Route::post('insertMessage', 'MessageController@insertMessage');
 Route::get('getMessages', 'MessageController@getMessages');
 
+//TwilioController
+Route::get('sendSMS', 'TwilioController@sendMessage');
+//handleMessage
+Route::get('handleMessage', 'TwilioController@handleMessage');
+
+
+
 
 
