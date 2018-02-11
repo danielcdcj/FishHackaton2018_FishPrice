@@ -16,3 +16,10 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::post('insertPrice', 'FishPriceController@insertPrice');
+//getLocations
+Route::get('getLocations', 'FishPriceController@getLocations');
+Route::get('getSpecies', 'FishPriceController@getSpecies');
+//getYears
+Route::get('getYears', 'FishPriceController@getYears');
+Route::get('getPrice', 'FishPriceController@getPrice');
