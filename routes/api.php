@@ -23,3 +23,9 @@ Route::get('getSpecies', 'FishPriceController@getSpecies');
 //getYears
 Route::get('getYears', 'FishPriceController@getYears');
 Route::get('getPrice', 'FishPriceController@getPrice');
+
+Route::post('insertMessage', 'MessageController@insertMessage');
+Route::get('getMessages', 'MessageController@getMessages');
+
+
+
